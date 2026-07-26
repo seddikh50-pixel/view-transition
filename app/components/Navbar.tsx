@@ -24,11 +24,11 @@ export default function Navbar() {
       </h1>
 
       <div className=" flex gap-5 font-bold text-3xl ">
-        <h1 className="font-bold cursor-pointer" onClick={() => navigate("/Klauspillon")}>
+        <h1 className="font-bold cursor-pointer" onClick={() => navigate("/klauspillon")}>
           Klauspillon
         </h1>
 
-        <h1 className="font-bold cursor-pointer" onClick={() => navigate("/Machine")}>
+        <h1 className="font-bold cursor-pointer" onClick={() => navigate("/machine")}>
           Machine
         </h1>
       </div>

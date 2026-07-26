@@ -23,7 +23,7 @@ export default function Navbar() {
         Fares
       </h1>
       <Link rel="stylesheet" href="klauspillon" >
-      Klauspillon
+        Klauspillon
       </Link>
 
       <div className=" flex gap-5 font-bold text-3xl ">

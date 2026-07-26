@@ -7,7 +7,7 @@ export default function Gateway() {
     >
         <Image
             src="/fares.jpg"
-            alt=""
+            alt="d"
             fill
             className="object-cover"
           />

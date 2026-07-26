@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-
+import Link from "next/link";
 
 export default function Navbar() {
   const router = useRouter();
@@ -22,9 +22,9 @@ export default function Navbar() {
       <h1 className="font-bold text-3xl cursor-pointer" onClick={() => navigate("/")}>
         Fares
       </h1>
-      <link rel="stylesheet" href="klauspillon" >
+      <Link rel="stylesheet" href="klauspillon" >
       Klauspillon
-      </link>
+      </Link>
 
       <div className=" flex gap-5 font-bold text-3xl ">
         <h1 className="font-bold cursor-pointer" onClick={() => navigate("/klauspillon")}>

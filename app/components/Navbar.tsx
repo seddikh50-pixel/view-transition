@@ -27,8 +27,8 @@ export default function Navbar() {
       </Link> */}
 
       <div className=" flex gap-5 font-bold text-3xl ">
-        <h1 className="font-bold cursor-pointer" onClick={() => navigate("/klaus")}>
-          Klauspillon
+        <h1 className="font-bold cursor-pointer" onClick={() => navigate("/abandoned")}>
+          Abandoned
         </h1>
 
         <h1 className="font-bold cursor-pointer" onClick={() => navigate("/machi")}>

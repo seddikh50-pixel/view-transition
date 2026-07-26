@@ -9,12 +9,12 @@ export default function Gateway() {
       }}
     >
         <Image
-            src="/klauspillon.jpg"
+            src="/abandoned.jpg"
             alt=""
             fill
             className="object-cover"
           />
-                    <h1 className=" absolute bottom-15 text-9xl font-black left-20 z-10  text-white text-shadow-lg/30 ">Klauspillon</h1>
+                    <h1 className=" absolute bottom-15 text-9xl font-black left-20 z-10  text-white text-shadow-lg/30 ">Abandoned</h1>
 
     </main>
   );

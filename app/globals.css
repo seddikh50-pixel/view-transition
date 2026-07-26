@@ -1,26 +1,65 @@
 @import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* --bg: #000; */
+  --fg: #f2f0e6;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+::view-transition-old(root) {
+  animation: old-page 800ms ease both;
+}
+
+::view-transition-new(root) {
+  animation: new-page 800ms ease both;
+}
+
+@keyframes old-page {
+  from {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-25%) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes new-page {
+  from {
+    transform: translateY(40%);
+    clip-path: polygon(35% 50%, 65% 50%, 65% 50%, 35% 50%);
+  }
+
+  to {
+    transform: translateY(0%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
 }
